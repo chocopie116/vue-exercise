@@ -1,9 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script src="build/build.js"></script>
+<title>vue.js practice</title>
 </head>
 
 <body>
-test
+
+<div id="mycounter">
+    <div v-text="count"></div>
+
+    <button v-on="click: countUp">Up</button>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.11.5/vue.min.js"></script>
+<script>
+    // object(ViewModel) - data/methods(Model) <--> interface(View)
+    //counter
+    var vm = new Vue({
+            el: '#mycounter',
+            data: {
+                count: 0
+            },
+            methods: {
+                countUp: function() {
+                    this.count++;
+                }
+            }
+        });
+
+</script>
 </body>
 </html>
