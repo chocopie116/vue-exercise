@@ -6,28 +6,21 @@
 
 <body>
 
-<div id="mycounter">
-    <div v-text="count"></div>
-    <div v-text="count * 10"></div>
-    <div v-text="'(' + count + ')'"></div>
-    <div v-text="count? count :  '--'"></div>
-    <button v-on="click: countUp">Up</button>
+<div id="myapp">
+    <div v-text="content"></div>
+    <div> {{ 'content:' + content }}</div>
+    <div v-html="content"></div>
+    <div> {{{ content }}}</div>
 </div>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.11.5/vue.min.js"></script>
 <script>
     // object(ViewModel) - data/methods(Model) <--> interface(View)
-    //counter
     var vm = new Vue({
-            el: '#mycounter',
+            el: '#myapp',
             data: {
-                count: 0
+                content: '<h1>title</h1>'
             },
-            methods: {
-                countUp: function() {
-                    this.count++;
-                }
-            }
         });
 
 </script>
