@@ -13,6 +13,7 @@ output compiled some javascript files(for some entry points)
 * ポップアップとか簡単？
 * ブラウザの戻る押した時ってどう？
 * 複数のconcatファイルって出せる？(SPAのエントリポイント複数持てるように念のため検証)
+* cssのcompileとかどうする？(vue-loader?)
 
 # まとめること
 
