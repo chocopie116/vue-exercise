@@ -1,0 +1,22 @@
+{
+  "name": "vue-exercise",
+  "version": "0.0.0",
+  "description": "vue.js SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chocopie116/vue-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chocopie116/vue-exercise/issues"
+  },
+  "homepage": "https://github.com/chocopie116/vue-exercise",
+  "dependencies": {
+    "vue": "^0.11.5"
+  }
+}
