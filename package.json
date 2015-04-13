@@ -18,5 +18,8 @@
   "homepage": "https://github.com/chocopie116/vue-exercise",
   "dependencies": {
     "vue": "^0.11.5"
+  },
+  "devDependencies": {
+    "webpack": "^1.8.4"
   }
 }
