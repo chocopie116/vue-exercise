@@ -19,3 +19,16 @@ output compiled some javascript files(for some entry points)
 * タイピング量どう？
 * デザイナーさんとの分業って大丈夫？
 * 設計複雑になりそうなところは？
+
+
+
+# install
+
+```
+$ npm install
+```
+
+compile js
+```
+$ make watch-and-compile
+```
