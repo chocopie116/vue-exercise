@@ -5,14 +5,13 @@
 </head>
 
 <body>
+<style>
+    .red  { color: red;}
+    .bold { font-weight: bold;}
+</style>
 
 <div id="myapp">
-    <div v-show="showContent">
-        <!-- if (false) display:none -->
-        {{ content }}
-    </div>
-    <div v-if="showContent">
-        <!-- if (false) delete dom content -->
+    <div v-class="myStyle">
         {{ content }}
     </div>
 </div>
@@ -24,7 +23,7 @@
             el: '#myapp',
             data: {
                 content: 'hello world',
-                showContent: false
+                myStyle: 'bold'
             },
         });
 
