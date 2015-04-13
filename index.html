@@ -8,7 +8,9 @@
 
 <div id="mycounter">
     <div v-text="count"></div>
-
+    <div v-text="count * 10"></div>
+    <div v-text="'(' + count + ')'"></div>
+    <div v-text="count? count :  '--'"></div>
     <button v-on="click: countUp">Up</button>
 </div>
 
