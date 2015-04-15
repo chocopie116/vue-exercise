@@ -33,8 +33,14 @@
 
     <div v-if="currentPage === 'affiliate'">
         <h2> This is Affiliate detail</h2>
-        <p>Name: {{name}}  <a href="{{link}}">link</a></p>
+        <ul>
+            <li v-repeat="affiliate_detail">
+            <p>案件ID: {{id}} </p>
+            </li>
+        </ul>
     </div>
+
+    <div v-component="my-component"></div>
 </div>
 
 <script src="build/build.js"></script>
