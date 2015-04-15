@@ -1,6 +1,7 @@
 'use strict';
 var Vue = require('vue'),
-    router = require('crossroads');
+    router = require('crossroads'),
+    Listner = require('./listner');
 
 var vm = new Vue({
     el: '#myapp',
@@ -25,10 +26,5 @@ router.addRoute('affiliate/{id}', function(id) {
 });
 
 
-var a = document.querySelectorAll('a');
-for (var i=0; i<a.length; i++) {
-    a[i].onclick=function(e){
-        var path = this.href.split('#')[1];
-        router.parse(path);
-    }
-}
+var listner = new Listner(router);
+listner.listhenClick(document.querySelectorAll('a'));
