@@ -11,9 +11,9 @@
 </style>
 
 <nav>
-    <a href="#welcome">home</a>
-    <a href="#home">section1</a>
-    <a href="#affiliate/3">section2</a>
+    <a href="#welcome">welcome</a>
+    <a href="#home">home</a>
+    <a href="#affiliate/3">affiliate</a>
 </nav>
 
 <div id="js-demo-app">
@@ -25,11 +25,15 @@
     <div v-if="currentPage === 'home'">
         <h2> This is Home</h2>
         <ul>
+            <li v-repeat="affiliates">
+            <p>Name: {{name}}  <a href="{{link}}">link</a></p>
+            </li>
         </ul>
     </div>
 
     <div v-if="currentPage === 'affiliate'">
         <h2> This is Affiliate detail</h2>
+        <p>Name: {{name}}  <a href="{{link}}">link</a></p>
     </div>
 </div>
 
