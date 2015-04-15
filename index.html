@@ -6,8 +6,8 @@
 
 <body>
 <style>
-    .red  { color: red;}
-    .bold { font-weight: bold;}
+.red  { color: red;}
+.bold { font-weight: bold;}
 </style>
 
 <nav>
@@ -16,32 +16,23 @@
     <a href="#affiliate/3">section2</a>
 </nav>
 
-<div id="myapp">
-    <p>
-        <input type="text" v-model="name">
-        {{name}}
-    </p>
-    <p>
-        <input type="checkbox" v-model="isAdmin">
-        {{isAdmin ? 'admin' : 'not admin'}}
-    </p>
-    <p>
-        <input type="radio" name="phone" v-model="phone" value="iPhone">
-        <input type="radio" name="phone" v-model="phone" value="Android">
-        {{phone}}
-    </p>
-    <p>
-        <select v-model="city">
-            <option value="tokyo">tokyo</option>
-            <option value="ohsaka">ohsaka</option>
-            <option value="kyoto">kyoto</option>
-        </select>
-        {{city}}
-    </p>
+<div id="js-demo-app">
+    <h1>{{ message }}</h1>
+    <div id="js-welcome">
+        <h2>Welcome</h2>
+    </div>
+
+    <div id="home">
+        <h2> This is Home</h2>
+        <ul>
+        </ul>
+    </div>
+
+    <div id="js-affiliate">
+        <h2> This is Affiliate detail</h2>
+    </div>
 </div>
 
 <script src="build/build.js"></script>
-<script>
-</script>
 </body>
 </html>

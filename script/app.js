@@ -3,13 +3,11 @@ var Vue = require('vue'),
     router = require('crossroads'),
     Listner = require('./listner');
 
+
 var vm = new Vue({
-    el: '#myapp',
+    el: '#js-demo-app',
     data: {
-        name: 'chocopie116',
-        isAdmin: true,
-        phone: 'iPhone',
-        city: 'tokyo'
+        message: 'Hi. This is Vue.js SPA demo',
     },
 });
 
