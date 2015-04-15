@@ -3,9 +3,9 @@ var vm = new Vue({
     el: '#myapp',
     data: {
         name: 'chocopie116',
-    isAdmin: true,
-    phone: 'iPhone',
-    city: 'tokyo'
+        isAdmin: true,
+        phone: 'iPhone',
+        city: 'tokyo'
     },
 });
 
