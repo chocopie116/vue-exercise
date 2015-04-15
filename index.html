@@ -18,17 +18,17 @@
 
 <div id="js-demo-app">
     <h1>{{ message }}</h1>
-    <div id="js-welcome">
+    <div v-if="currentPage === 'welcome'">
         <h2>Welcome</h2>
     </div>
 
-    <div id="home">
+    <div v-if="currentPage === 'home'">
         <h2> This is Home</h2>
         <ul>
         </ul>
     </div>
 
-    <div id="js-affiliate">
+    <div v-if="currentPage === 'affiliate'">
         <h2> This is Affiliate detail</h2>
     </div>
 </div>
