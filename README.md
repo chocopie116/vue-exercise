@@ -26,7 +26,7 @@ output compiled some javascript files(for some entry points)
     * 複数出す必要ないかな。出す必要あればgulpの中でbrowserifyでtask記述すればよい
 * css jsのcompileとかどうする？
     * 1.gulpでsassで、browserifyを使うのが一番硬い感じがする
-    * 2.vueifyを使って、<style><template><script>をweb componentsライクに書くことも可能
+    * 2.vueifyを使って、`<style><template><script>` をweb componentsライクに書くことも可能
         * 1でいいかな感
 * テストとかってかける？
     * VMの中で、何かの操作をしたときに、vm.$dataについてアサーションをする感じ。[リンク](http://vuejs.org/guide/application.html#Unit_Testing)
