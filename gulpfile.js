@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     browserify = require('browserify'),
     vsource = require('vinyl-source-stream');
 
-//build javascript
+//build js
 gulp.task('js-build-dev', function() {
     browserify('./script/app.js')
         .bundle()
@@ -10,4 +10,7 @@ gulp.task('js-build-dev', function() {
         .pipe(gulp.dest('./build'));
 });
 
-
+//detect file change and build js
+gulp.task('watch-js', ['js-build-dev'], function() {
+    gulp.watch('./script/*.js', ['js-build-dev']);
+});
